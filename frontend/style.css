@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 24px;
+  background: #222;
+  color: white;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav span {
+  margin-left: auto;
+}
+
+button,
+.boton {
+  border: 0;
+  padding: 9px 12px;
+  border-radius: 6px;
+  background: #2357c6;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  margin: 16px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.form-card {
+  max-width: 480px;
+  margin: 32px auto;
+}
+
+.form-card.grande {
+  max-width: 700px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+textarea {
+  min-height: 90px;
+}
+
+.filtros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.tabla {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla th,
+.tabla td {
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  padding: 10px;
+}
+
+.tabla th {
+  background: #e8edf5;
+}
+
+.vencida {
+  background: #fff0f0;
+}
+
+.error {
+  color: #b00020;
+  font-weight: bold;
+}
+
+.ok {
+  color: #0b7a34;
+  font-weight: bold;
+}
+
+.ayuda {
+  color: #555;
+}
+
+.header-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.paginacion,
+.acciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.resumen-card p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.historial-item {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+pre {
+  background: #f0f0f0;
+  padding: 10px;
+  overflow-x: auto;
+}
