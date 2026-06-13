@@ -1,0 +1,314 @@
+{
+  "usuarios": [
+    {
+      "id": "usr-001",
+      "nombre": "Ana Admin",
+      "email": "admin@dds.com",
+      "passwordHash": "$2a$10$PBkZLKKpfgScYTcAVmrGS.OsSeK9pQwbTGvdqkCedhMHExia7vOiC",
+      "rol": "admin",
+      "activo": true
+    },
+    {
+      "id": "usr-002",
+      "nombre": "Luis Lider",
+      "email": "lider@dds.com",
+      "passwordHash": "$2a$10$PBkZLKKpfgScYTcAVmrGS.OsSeK9pQwbTGvdqkCedhMHExia7vOiC",
+      "rol": "lider",
+      "activo": true
+    },
+    {
+      "id": "usr-003",
+      "nombre": "Mica Torres",
+      "email": "mica@dds.com",
+      "passwordHash": "$2a$10$PBkZLKKpfgScYTcAVmrGS.OsSeK9pQwbTGvdqkCedhMHExia7vOiC",
+      "rol": "colaborador",
+      "activo": true
+    },
+    {
+      "id": "usr-004",
+      "nombre": "Juan Perez",
+      "email": "juan@dds.com",
+      "passwordHash": "$2a$10$PBkZLKKpfgScYTcAVmrGS.OsSeK9pQwbTGvdqkCedhMHExia7vOiC",
+      "rol": "colaborador",
+      "activo": true
+    },
+    {
+      "id": "usr-005",
+      "nombre": "Sofia Gomez",
+      "email": "sofia@dds.com",
+      "passwordHash": "$2a$10$PBkZLKKpfgScYTcAVmrGS.OsSeK9pQwbTGvdqkCedhMHExia7vOiC",
+      "rol": "colaborador",
+      "activo": true
+    }
+  ],
+  "proyectos": [
+    {
+      "id": "proy-001",
+      "codigo": "DDS-API",
+      "nombre": "API de seguimiento",
+      "descripcion": "Backend para administrar tareas de proyectos",
+      "estado": "activo",
+      "integrantes": [
+        "usr-001",
+        "usr-002",
+        "usr-003",
+        "usr-004"
+      ]
+    },
+    {
+      "id": "proy-002",
+      "codigo": "DDS-FRONT",
+      "nombre": "Frontend React",
+      "descripcion": "Interfaz web para operar las tareas",
+      "estado": "activo",
+      "integrantes": [
+        "usr-001",
+        "usr-002",
+        "usr-004",
+        "usr-005"
+      ]
+    },
+    {
+      "id": "proy-003",
+      "codigo": "DDS-QA",
+      "nombre": "Pruebas y calidad",
+      "descripcion": "Pruebas automatizadas y revisión de errores",
+      "estado": "pausado",
+      "integrantes": [
+        "usr-001",
+        "usr-002",
+        "usr-003"
+      ]
+    },
+    {
+      "id": "proy-004",
+      "codigo": "DDS-OLD",
+      "nombre": "Proyecto cerrado",
+      "descripcion": "Proyecto finalizado para probar reglas de negocio",
+      "estado": "finalizado",
+      "integrantes": [
+        "usr-001",
+        "usr-005"
+      ]
+    }
+  ],
+  "tareas": [
+    {
+      "id": "tar-1001",
+      "proyectoId": "proy-001",
+      "titulo": "Crear endpoint login",
+      "descripcion": "Endpoint POST para iniciar sesion",
+      "responsableId": "usr-003",
+      "prioridad": "alta",
+      "estado": "pendiente",
+      "fechaLimite": "2026-07-01",
+      "createdAt": "2026-06-01T10:00:00.000Z"
+    },
+    {
+      "id": "tar-1002",
+      "proyectoId": "proy-001",
+      "titulo": "Middleware JWT",
+      "descripcion": "Validar token en rutas protegidas",
+      "responsableId": "usr-004",
+      "prioridad": "alta",
+      "estado": "en_progreso",
+      "fechaLimite": "2026-07-03",
+      "createdAt": "2026-06-01T11:00:00.000Z"
+    },
+    {
+      "id": "tar-1003",
+      "proyectoId": "proy-001",
+      "titulo": "Errores centralizados",
+      "descripcion": "Crear middleware de errores",
+      "responsableId": "usr-002",
+      "prioridad": "media",
+      "estado": "bloqueada",
+      "fechaLimite": "2026-06-15",
+      "createdAt": "2026-06-02T09:00:00.000Z"
+    },
+    {
+      "id": "tar-1004",
+      "proyectoId": "proy-001",
+      "titulo": "Documentar endpoints",
+      "descripcion": "Agregar endpoints al README",
+      "responsableId": "usr-003",
+      "prioridad": "baja",
+      "estado": "finalizada",
+      "fechaLimite": "2026-06-10",
+      "createdAt": "2026-06-02T12:00:00.000Z"
+    },
+    {
+      "id": "tar-1005",
+      "proyectoId": "proy-001",
+      "titulo": "Cancelar tarea vieja",
+      "descripcion": "Ejemplo de tarea cancelada",
+      "responsableId": "usr-004",
+      "prioridad": "baja",
+      "estado": "cancelada",
+      "fechaLimite": "2026-06-11",
+      "createdAt": "2026-06-03T10:00:00.000Z"
+    },
+    {
+      "id": "tar-1006",
+      "proyectoId": "proy-002",
+      "titulo": "Pantalla login",
+      "descripcion": "Formulario de inicio de sesion",
+      "responsableId": "usr-004",
+      "prioridad": "media",
+      "estado": "pendiente",
+      "fechaLimite": "2026-07-04",
+      "createdAt": "2026-06-03T13:00:00.000Z"
+    },
+    {
+      "id": "tar-1007",
+      "proyectoId": "proy-002",
+      "titulo": "Listado de tareas",
+      "descripcion": "Tabla con filtros combinables",
+      "responsableId": "usr-005",
+      "prioridad": "critica",
+      "estado": "en_progreso",
+      "fechaLimite": "2026-06-01",
+      "createdAt": "2026-06-04T10:00:00.000Z"
+    },
+    {
+      "id": "tar-1008",
+      "proyectoId": "proy-002",
+      "titulo": "Detalle de tarea",
+      "descripcion": "Ruta dinamica con historial",
+      "responsableId": "usr-004",
+      "prioridad": "alta",
+      "estado": "pendiente",
+      "fechaLimite": "2026-07-08",
+      "createdAt": "2026-06-04T11:00:00.000Z"
+    },
+    {
+      "id": "tar-1009",
+      "proyectoId": "proy-002",
+      "titulo": "Formulario alta",
+      "descripcion": "Crear tareas desde frontend",
+      "responsableId": "usr-002",
+      "prioridad": "alta",
+      "estado": "en_progreso",
+      "fechaLimite": "2026-07-09",
+      "createdAt": "2026-06-05T10:00:00.000Z"
+    },
+    {
+      "id": "tar-1010",
+      "proyectoId": "proy-002",
+      "titulo": "Ruta no encontrada",
+      "descripcion": "Mostrar pagina 404",
+      "responsableId": "usr-005",
+      "prioridad": "baja",
+      "estado": "finalizada",
+      "fechaLimite": "2026-06-12",
+      "createdAt": "2026-06-05T12:00:00.000Z"
+    },
+    {
+      "id": "tar-1011",
+      "proyectoId": "proy-003",
+      "titulo": "Configurar Jest",
+      "descripcion": "Tests con Supertest",
+      "responsableId": "usr-003",
+      "prioridad": "media",
+      "estado": "pendiente",
+      "fechaLimite": "2026-07-10",
+      "createdAt": "2026-06-06T09:00:00.000Z"
+    },
+    {
+      "id": "tar-1012",
+      "proyectoId": "proy-003",
+      "titulo": "Probar permisos",
+      "descripcion": "Casos con 401 y 403",
+      "responsableId": "usr-002",
+      "prioridad": "critica",
+      "estado": "bloqueada",
+      "fechaLimite": "2026-06-02",
+      "createdAt": "2026-06-06T10:00:00.000Z"
+    },
+    {
+      "id": "tar-1013",
+      "proyectoId": "proy-003",
+      "titulo": "Datos semilla",
+      "descripcion": "Usuarios proyectos tareas e historial",
+      "responsableId": "usr-001",
+      "prioridad": "media",
+      "estado": "en_progreso",
+      "fechaLimite": "2026-07-11",
+      "createdAt": "2026-06-06T12:00:00.000Z"
+    },
+    {
+      "id": "tar-1014",
+      "proyectoId": "proy-004",
+      "titulo": "Tarea de proyecto cerrado",
+      "descripcion": "Sirve para probar proyecto finalizado",
+      "responsableId": "usr-005",
+      "prioridad": "alta",
+      "estado": "finalizada",
+      "fechaLimite": "2026-06-01",
+      "createdAt": "2026-06-07T10:00:00.000Z"
+    },
+    {
+      "id": "tar-1015",
+      "proyectoId": "proy-001",
+      "titulo": "Tarea libre para pruebas",
+      "descripcion": "Se puede usar para probar acciones",
+      "responsableId": "usr-004",
+      "prioridad": "baja",
+      "estado": "en_progreso",
+      "fechaLimite": "2026-07-20",
+      "createdAt": "2026-06-07T12:00:00.000Z"
+    }
+  ],
+  "historial_tareas": [
+    {
+      "id": "hist-001",
+      "tareaId": "tar-1001",
+      "usuarioId": "usr-001",
+      "accion": "creacion",
+      "fechaHora": "2026-06-01T10:00:00.000Z",
+      "valorAnterior": null,
+      "valorNuevo": {
+        "estado": "pendiente"
+      }
+    },
+    {
+      "id": "hist-002",
+      "tareaId": "tar-1002",
+      "usuarioId": "usr-002",
+      "accion": "cambio_estado",
+      "fechaHora": "2026-06-02T10:00:00.000Z",
+      "valorAnterior": {
+        "estado": "pendiente"
+      },
+      "valorNuevo": {
+        "estado": "en_progreso"
+      }
+    },
+    {
+      "id": "hist-003",
+      "tareaId": "tar-1003",
+      "usuarioId": "usr-002",
+      "accion": "cambio_estado",
+      "fechaHora": "2026-06-03T10:00:00.000Z",
+      "valorAnterior": {
+        "estado": "en_progreso"
+      },
+      "valorNuevo": {
+        "estado": "bloqueada"
+      }
+    },
+    {
+      "id": "hist-0004",
+      "tareaId": "tar-1015",
+      "usuarioId": "usr-001",
+      "accion": "cambio_estado",
+      "fechaHora": "2026-06-13T20:55:22.396Z",
+      "valorAnterior": {
+        "estado": "pendiente"
+      },
+      "valorNuevo": {
+        "estado": "en_progreso"
+      }
+    }
+  ]
+}
